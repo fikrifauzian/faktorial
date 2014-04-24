@@ -1,0 +1,36 @@
+/*
+ * To change this license header, choose License Headers in Project Properties.
+ * To change this template file, choose Tools | Templates
+ * and open the template in the editor.
+ */
+
+package faktorial;
+
+import java.util.Scanner;
+
+/**
+ *
+ * @author fikrifauzian
+ */
+public class Faktorial {
+    public static int faktorial(int nilai)
+    {
+        int tot=1;
+        for (int i=1;i<=nilai;i++) {
+            tot=tot*i;
+        }
+        return tot;
+    }
+    /**
+     * @param args the command line arguments
+     */
+    public static void main(String[] args) {
+        // TODO code application logic here
+        Scanner scanner = new Scanner(System.in);
+        System.out.print("Masukkan angka : ");
+        int n= scanner.nextInt();
+        int hasil = faktorial(n);
+        System.out.println("Angka faktorial dari " + n +" adalah " + hasil);
+    }
+    
+}
